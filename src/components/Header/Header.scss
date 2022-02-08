@@ -1,0 +1,40 @@
+@use '../../styles/varibles' as *;
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color;
+	padding: 1rem;
+
+	&__title {
+		margin: 0;
+		font-weight: 500;
+	}
+
+	&__tag {
+		margin: 0;
+		color: white;
+		font-style: italic;
+		opacity: 0.5;
+	}
+}
+
+.nav {
+	display: flex;
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		list-style: none;
+	}
+
+	&__item {
+		padding-left: 1rem;
+
+		&:first-child {
+			padding: 0;
+		}
+	}
+}
