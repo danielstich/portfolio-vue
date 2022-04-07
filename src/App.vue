@@ -37,10 +37,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color-dark;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba($color: $background-color, $alpha: 0.1);
 }
 
 body {
-  margin: 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100vh;
+  background: #eee;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 *,
